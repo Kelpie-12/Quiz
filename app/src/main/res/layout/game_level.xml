@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <LinearLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_stroke_black_opaity_press_white"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/black_opacity"
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    android:text="@string/back" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/container4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selectLevel1"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="1" />
+
+                            <TextView
+                                android:id="@+id/selectLevel2"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="2" />
+
+                            <TextView
+                                android:id="@+id/selectLevel3"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selectLevel4"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="4" />
+
+                            <TextView
+                                android:id="@+id/selectLevel5"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="5" />
+
+                            <TextView
+                                android:id="@+id/selectLevel6"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="6" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selectLevel7"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="7" />
+
+                            <TextView
+                                android:id="@+id/selectLevel8"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="8" />
+
+                            <TextView
+                                android:id="@+id/selectLevel9"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="9" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selectLevel10"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="10" />
+
+                            <TextView
+                                android:id="@+id/selectLevel11"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="11" />
+
+                            <TextView
+                                android:id="@+id/selectLevel12"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="12" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/line5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/selectLevel13"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="13" />
+
+                            <TextView
+                                android:id="@+id/selectLevel14"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="14" />
+
+                            <TextView
+                                android:id="@+id/selectLevel15"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:background="@drawable/button_game_levels"
+                                android:layout_margin="10dp"
+                                android:textSize="24sp"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:text="15" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

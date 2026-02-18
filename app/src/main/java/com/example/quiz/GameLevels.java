@@ -30,24 +30,19 @@ public class GameLevels extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Button buttonBack = findViewById(R.id.button_back);
-        buttonBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        buttonBack.setOnClickListener(v-> {
+
                 Intent intent = new Intent(GameLevels.this, MainActivity.class);
                 startActivity(intent);
-            }
+
         });
         for (int i = 0; i < 15; i++) {
-
             int resId=getResources().getIdentifier("selectLevel"+(i+1),"id",getPackageName());
             if (resId != 0) {
                 TextView tmp = findViewById(resId);
                 if (tmp != null) {
                     final int  index=i;
-                    tmp.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-
+                    tmp.setOnClickListener(v-> {
                             try {
                                 Class<?> cls = Class.forName("com.example.quiz.Level"+(index+1));
                                 Intent intent = new Intent(GameLevels.this, cls);
@@ -56,7 +51,7 @@ public class GameLevels extends AppCompatActivity {
                                 e.printStackTrace();
                                 Log.e("DynamicStart", "Класс " + "Level" +(index+1)+ " не найден");
                             }
-                        }});
+                        });
                     levels.add(tmp);
                 }
                 else {
